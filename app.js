@@ -20,7 +20,6 @@ var commentRoutes    = require("./routes/comments"),
  
 var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp";
 mongoose.connect(url, {useNewUrlParser: true});
-
 app.use('/favicon.ico', express.static('images/favicon.ico'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
